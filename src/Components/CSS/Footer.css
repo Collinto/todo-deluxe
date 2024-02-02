@@ -1,0 +1,30 @@
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(80, 79, 79);  
+    color: white;
+    max-height: 15rem;   
+    flex-direction: column;
+    border-radius: 20px 20px 0 0;
+}
+
+.contact{
+    align-self: start;
+    margin-left: 6rem;
+}
+
+.copyright{
+    margin-top: 5px;
+}
+
+.addresses{
+    margin-left: 0;
+}
+li{
+    list-style-type: none;
+}
+
+.icon{
+    margin-right: 20px;
+}

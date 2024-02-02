@@ -1,0 +1,14 @@
+body{
+    overflow: auto;
+    background: url(./Dark\,\ cityscape\,\ night\,\ artwork\,\ illustration\ wallpaper.jpg)
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* .main{
+    background: rgb(9, 9, 24);
+} */

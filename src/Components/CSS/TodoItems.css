@@ -1,0 +1,68 @@
+.todoitems{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+    background: rgb(77, 76, 76);
+    padding: 4px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.todoitemsContainer{
+    display: flex;
+    margin-left: 5px;
+}
+
+#todoItemsText{
+    padding-left: 10px;
+    color: rgb(151, 209, 226);
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 18px;
+    border: none;
+    background: none;
+    width: 350px;
+}
+
+#todoItemsText:focus{
+    outline: none;
+    border: none;
+}
+
+.tick{
+    height: 20px;
+    width: 20px;
+    color: rgb(29, 167, 48);
+    cursor: pointer;
+}
+
+.untick{
+    height: 18px;
+    width: 18px;
+    color: rgb(255, 248, 248);
+    border: 0.1px solid rgb(211, 208, 208);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.cross{
+    height: 20px;
+    width: 20px;
+    color: rgb(243, 111, 111);
+    cursor: pointer;
+    padding-right: 25px;
+    margin-left: 3px;
+}
+
+.crossHelp{
+    width: 30px;
+}
+
+.save:active, .trash:active, .cross:active {
+    transform: scale(0.5);
+}
+
+.lineThrough{
+    text-decoration: line-through solid whitesmoke 2px;
+}

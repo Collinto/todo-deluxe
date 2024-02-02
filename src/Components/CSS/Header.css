@@ -1,0 +1,40 @@
+.Head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    background: rgb(141, 143, 155);
+    border-radius: 0 0 20px 20px;
+}
+
+h2{
+    display: flex;
+    margin-left: 2.5rem;
+    color: rgb(39, 39, 165);
+    border: solid 3px rgb(16, 16, 214);
+    padding: 0.25rem;
+    margin-bottom: auto;
+    border-radius: 50px;
+    margin-right: 1rem;
+    background: whitesmoke;
+}
+
+h2 .comp{
+    margin-top: 4px;
+}
+
+.addons{
+    width: 13rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: solid 2px black; */
+    margin-right: 2.5rem;
+}
+
+h3{
+    width: 10rem;
+    /* border: solid 2px black; */
+    color: rgb(39, 39, 165);
+}
