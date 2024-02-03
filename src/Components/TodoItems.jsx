@@ -1,6 +1,7 @@
 import './CSS/TodoItems.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCheckCircle, faCircle, faTimes} from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {faCheckCircle, faCircle, faTimes} from '@fortawesome/free-solid-svg-icons'
+import {FaCheckCircle, FaCircle, FaTimes} from 'react-icons/fa';
 
 export default function TodoItems({id,display,text, todos, setTodos}) {
 
@@ -34,7 +35,7 @@ export default function TodoItems({id,display,text, todos, setTodos}) {
     <div className="todoitems">
       <div className='todoitemsContainer ' onClick={()=>{toggle(id)}}>
       {/* <FontAwesomeIcon icon="check-square" />  */}
-      {display===""?<FontAwesomeIcon icon={faCircle} className="untick" />:<FontAwesomeIcon icon={faCheckCircle} className="tick" />}
+      {display===""?<FontAwesomeIcon icon={FaCircle} className="untick" />:<FontAwesomeIcon icon={FaCheckCircle} className="tick" />}
       </div>
 
       <input 
@@ -42,7 +43,7 @@ export default function TodoItems({id,display,text, todos, setTodos}) {
       className={`${display}`} value={text} readOnly={true}  />
           
         <div className="crossHelp" onClick={()=>{Delete(id)}}>
-          <FontAwesomeIcon icon={faTimes} className="cross" />    
+          <FontAwesomeIcon icon={FaTimes} className="cross" />    
       </div>
     </div>
   )
