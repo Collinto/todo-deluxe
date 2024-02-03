@@ -35,7 +35,9 @@ export default function TodoItems({id,display,text, todos, setTodos}) {
     <div className="todoitems">
       <div className='todoitemsContainer ' onClick={()=>{toggle(id)}}>
       {/* <FontAwesomeIcon icon="check-square" />  */}
-      {display===""?<FontAwesomeIcon icon={FaCircle} className="untick" />:<FontAwesomeIcon icon={FaCheckCircle} className="tick" />}
+{/*       {display===""?<FontAwesomeIcon icon={FaCircle} className="untick" />:<FontAwesomeIcon icon={FaCheckCircle} className="tick" />}
+      </div> */}
+      {display===""?<FaCircle className="untick" />:<FaCheckCircle className="tick" />}
       </div>
 
       <input 
@@ -43,7 +45,8 @@ export default function TodoItems({id,display,text, todos, setTodos}) {
       className={`${display}`} value={text} readOnly={true}  />
           
         <div className="crossHelp" onClick={()=>{Delete(id)}}>
-          <FontAwesomeIcon icon={FaTimes} className="cross" />    
+{/*           <FontAwesomeIcon icon={FaTimes} className="cross" />     */}
+          <FaTimes className="cross" />    
       </div>
     </div>
   )
